@@ -8,7 +8,7 @@ package;
 	/**
 		Evaluates a script from a GlideRecord field. variables parameter is optional
 	**/
-	function evaluateScript(gr:GlideRecord, scriptField:String, variables:Dynamic):Null<{ }>;
+	function evaluateScript(gr:GlideRecord, scriptField:String, ?variables:Dynamic):Null<{ }>;
 	/**
 		Puts a variable into the GlideScopedEvaluator object
 	**/

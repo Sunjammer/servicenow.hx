@@ -245,7 +245,7 @@ package;
 	/**
 		Uses the debug level to log a message to the system log
 	**/
-	function debug(message:String, parm1:Dynamic, parm2:Dynamic, parm3:Dynamic, parm4:Dynamic, parm5:Dynamic):Void;
+	function debug(message:String, ?parm1:Dynamic, ?parm2:Dynamic, ?parm3:Dynamic, ?parm4:Dynamic, ?parm5:Dynamic):Void;
 	/**
 		Retrieves a message from UI messages. args is an optional paramter
 	**/

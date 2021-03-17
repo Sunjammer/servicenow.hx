@@ -4,7 +4,12 @@ package;
 	The scoped GlideDuration class provides methods for working with spans of time or durations. GlideDuration objects store the duration as a date and time from January 1, 1970, 00:00:00. As a result, setValue() and getValue() use the GlideDateTime object for parameters and return values
 **/
 @:native("GlideDuration") extern class GlideDuration {
-	function new();
+	/**
+		function new(ms:Int);
+		function new(other:GlideDuration);
+		function new(displayValue:String);
+	**/
+	function new(?input:Any);
 	/**
 		Adds a given duration to the current duration
 	**/

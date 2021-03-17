@@ -111,7 +111,7 @@ package;
 	/**
 		Updates the current GlideRecord with any changes that have been made
 	**/
-	function update(reason:Dynamic):String;
+	function update(?reason:Dynamic):String;
 	/**
 		Specifies an orderBy column
 	**/
@@ -135,7 +135,7 @@ package;
 	/**
 		Defines a GlideRecord based on the specified expression of name = value
 	**/
-	function get(name:Dynamic, value:Dynamic):Dynamic;
+	function get(name:Dynamic, ?value:Dynamic):Dynamic;
 	/**
 		Determines if current record is a valid record
 	**/
