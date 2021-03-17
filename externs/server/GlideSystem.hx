@@ -85,7 +85,7 @@ package;
 	/**
 		Uses the info level to log a message to the system log
 	**/
-	function info(message:String, parm1:Dynamic, parm2:Dynamic, parm3:Dynamic, parm4:Dynamic, parm5:Dynamic):Void;
+	function info(message:String, ?parm1:Dynamic, ?parm2:Dynamic, ?parm3:Dynamic, ?parm4:Dynamic, ?parm5:Dynamic):Void;
 	function base64Encode(s:String):String;
 	/**
 		Gets the current URI for the session

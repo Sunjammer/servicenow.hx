@@ -4,7 +4,7 @@ package;
 	The scoped GlideDateTime default constructor, instantiates a new GlideDateTime object with the current date and time in Greenwich Mean Time (GMT). Optional 'value' parameter with a date and time value in the UTC time zone specified with the format yyyy-MM-dd HH:mm:ss
 **/
 @:native("GlideDateTime") extern class GlideDateTime {
-	function new(value:String);
+	function new(?value:Dynamic);
 	/**
 		Gets the day of the week stored by the GlideDateTime object, expressed in the user's time zone
 	**/
@@ -72,7 +72,7 @@ package;
 	/**
 		Adds a GlideTime object to the current GlideDateTime object
 	**/
-	function add(gt:GlideTime):Void;
+	function add(v:Dynamic):Void;
 	/**
 		Returns local time with internal time format
 	**/
