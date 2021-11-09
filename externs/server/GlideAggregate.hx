@@ -50,6 +50,10 @@ package;
 	**/
 	function getEncodedQuery():String;
 	/**
+		Gets the primary key of the record, which is usually the sys_id unless otherwise specified
+	**/
+	function getUniqueValue():String;
+	/**
 		Adds a NOT NULL query to the aggregate
 	**/
 	function addNotNullQuery(field:String):GlideQueryCondition;
@@ -76,7 +80,8 @@ package;
 	/**
 		Adds a query to the aggregate
 	**/
-	function addQuery(field:String, operator_:String, value:String):GlideQueryCondition;
+	@:overload(function(name:String, operator_:String, value:String):GlideQueryCondition { })
+	function addQuery(name:String, value:String):GlideQueryCondition;
 	/**
 		Gets the value of the specified aggregate
 	**/
